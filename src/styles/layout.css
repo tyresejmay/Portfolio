@@ -1,0 +1,137 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.site-header {
+  align-items: center;
+  backdrop-filter: blur(18px);
+  background: rgba(251, 252, 253, 0.86);
+  border-bottom: 1px solid rgba(223, 229, 234, 0.8);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 24px;
+  height: var(--header-height);
+  left: 0;
+  padding: 0 max(24px, calc((100vw - var(--max-width)) / 2));
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.brand-mark {
+  align-items: center;
+  background: var(--color-ink);
+  border-radius: 8px;
+  color: #ffffff;
+  display: inline-flex;
+  font-weight: 800;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+}
+
+.site-nav a {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.site-nav a:hover,
+.header-actions a:hover,
+.site-footer a:hover {
+  color: var(--color-red);
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.header-actions a {
+  align-items: center;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  display: inline-flex;
+  height: 38px;
+  justify-content: center;
+  width: 38px;
+}
+
+.page-section {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 92px 24px;
+}
+
+.section-heading {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 42px;
+}
+
+.section-heading > p:last-child {
+  max-width: 720px;
+}
+
+.eyebrow {
+  color: var(--color-red);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.button {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  display: inline-flex;
+  font-weight: 800;
+  gap: 10px;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+}
+
+.button-primary {
+  background: var(--color-red);
+  color: #ffffff;
+}
+
+.button-primary:hover {
+  background: var(--color-red-dark);
+}
+
+.button-secondary {
+  background: #ffffff;
+  border-color: var(--color-line);
+  color: var(--color-ink);
+}
+
+.button-secondary:hover {
+  border-color: var(--color-red);
+  color: var(--color-red);
+}
+
+.site-footer {
+  align-items: center;
+  border-top: 1px solid var(--color-line);
+  display: flex;
+  justify-content: space-between;
+  margin: 36px auto 0;
+  max-width: var(--max-width);
+  padding: 30px 24px;
+}
+
+.site-footer p,
+.site-footer a {
+  font-size: 0.95rem;
+}
+
