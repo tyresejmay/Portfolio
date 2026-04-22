@@ -7,7 +7,9 @@ describe('portfolio app', () => {
   it('renders the hero and primary sections', () => {
     render(<RouterProvider router={router} />);
 
-    expect(screen.getByRole('heading', { name: /tyrese may portfolio/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /tyrese may/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /project work/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /computer science foundation/i })).toBeInTheDocument();
   });
 });
 
