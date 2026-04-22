@@ -1,3 +1,5 @@
+import { publicAssetPath } from './assetPaths';
+
 export const profile = {
   name: 'Tyrese May',
   title: 'Data Analyst | Software Engineer',
@@ -5,8 +7,8 @@ export const profile = {
   email: '17tyresemay@gmail.com',
   github: 'https://github.com/tyresejmay',
   linkedin: 'https://www.linkedin.com/in/tyresejmay/',
-  resumePath: '/resume/Tyrese-May-Resume.pdf',
-  headshotPath: '/images/profile/tyrese-may-headshot.jpg',
+  resumePath: publicAssetPath('/resume/Tyrese-May-Resume.pdf'),
+  headshotPath: publicAssetPath('/images/profile/tyrese-may-headshot.jpg'),
   summary:
     'Graduating Computer Science student at the New Jersey Institute of Technology focused on data analytics, dashboarding, performance insights, and practical software solutions.',
   bio:
