@@ -1,3 +1,5 @@
+import { publicAssetPath } from './assetPaths';
+
 export const education = {
   university: 'New Jersey Institute of Technology',
   degree: 'Bachelor of Science in Computer Science',
@@ -6,11 +8,11 @@ export const education = {
   dates: 'September 2021 - May 2026',
   logos: [
     {
-      src: '/images/logos/njit-logo.png',
+      src: publicAssetPath('/images/logos/njit-logo.png'),
       alt: 'New Jersey Institute of Technology logo',
     },
     {
-      src: '/images/logos/njit-ywcc-logo.png',
+      src: publicAssetPath('/images/logos/njit-ywcc-logo.png'),
       alt: 'Ying Wu College of Computing logo',
     },
   ],
