@@ -5,7 +5,7 @@ export function HeroSection() {
   return (
     <section className="hero-section" id="top" aria-labelledby="hero-title">
       <div className="hero-content">
-        <p className="eyebrow">Data-focused portfolio</p>
+        <p className="eyebrow">Data Analyst Portfolio</p>
         <h1 id="hero-title">{profile.name}</h1>
         <p className="hero-title">{profile.title}</p>
         <p className="hero-summary">{profile.summary}</p>
@@ -27,7 +27,7 @@ export function HeroSection() {
         </div>
       </div>
       <div className="hero-portrait" aria-label="Portrait of Tyrese May">
-        <img src={profile.headshotPath} alt="Tyrese May in a black suit" />
+        <img src={profile.headshotPath} alt="Tyrese May in a professional suit" />
       </div>
     </section>
   );
